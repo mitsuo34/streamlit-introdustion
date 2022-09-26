@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from PIL import Image
+#from PIL import Image
 import time
 from random import random
 
@@ -9,8 +9,8 @@ st.title('streamlit 超入門')
 
 st.write('Displey Image')
 
-img = Image.open('2022-05-26.png')
-st.image(img,caption='screenShot',use_column_width=True)
+#img = Image.open('2022-05-26.png')
+#st.image(img,caption='screenShot',use_column_width=True)
 
 st.write('DataFrame')
 
@@ -60,8 +60,9 @@ st.map(df2)   #マップの表示
 st.write('インタラクティブなウィジェット')
 
 if st.checkbox('Show Image'):
-    img = Image.open('2022-05-26.png')
-    st.image(img,caption='screenShot',use_column_width=True)
+    st.write('image')
+#    img = Image.open('2022-05-26.png')
+#    st.image(img,caption='screenShot',use_column_width=True)
 
 option = st.selectbox(
     'あなたの好きな数字を選んでください',
